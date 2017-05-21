@@ -13,6 +13,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags ""
+                arguments "-DpathToProject:STRING=" + project.rootProject.getProjectDir().absolutePath
             }
         }
     }
